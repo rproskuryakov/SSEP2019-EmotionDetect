@@ -1,1 +1,1 @@
-web: gunicorn -b $(HOST):6379 app:app
+web: gunicorn -b 0.0.0.0:$(PORT) app:app
