@@ -43,11 +43,11 @@ def del_stop_words(text, stop_words):
     new_list = []
     for word in list_of_words:
         if word not in stop_words:
-            new_list.append(i)
+            new_list.append(word)
     return " ".join(new_list)
 
 
-def clean_text(text):
+def clean_text(text, stop_words=None):
     text = text.lower()
     text = del_paint(text)
     text = del_description(text)
@@ -55,6 +55,6 @@ def clean_text(text):
     text = del_punctuation(text)
     text = del_low_slash(text)
     text = del_number(text)
-    text = del_stop_words(text)
+    text = del_stop_words(text, stop_words)
     return text
 

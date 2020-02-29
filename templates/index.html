@@ -1,0 +1,245 @@
+<html>
+    <head>
+    	<title>Emotion Detect</title>
+        <meta charset="UTF-8">
+        <!-- Roboto -->
+        <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+        <!--StyleMain-->
+        <link type="text/css" rel="stylesheet" href="../static/css/main/style.css">
+        <!--Slick-->
+        <link type="text/css" rel="stylesheet" href="../static/css/slick/slick.css">
+        <link type="text/css" rel="stylesheet" href="../static/css/slick/slick-theme.css">
+    </head>
+    <body>
+    	<header id="anchor-main">
+    		<nav class="nav">
+    			<div class="nav-left">
+    				<span class="nav-title">EmotionDetect</span>
+    			</div>
+    			<div class="nav-right">
+    				<ul class="nav-menu">
+    					<li onclick="javascript:scrollToAnchor('anchor-main')">Главная</li>
+    					<li onclick="javascript:scrollToAnchor('anchor-aboutUs')">О нас</li>
+    				</ul>
+    			</div>
+    		</nav>
+    	</header>
+    	<section class="section-carousel">
+    		<div class="carousel">
+    			<div class="carousel-item item-1">
+    				<div class="item-left">
+    					<div class="item-text">
+    						<span class="line1"><span class="highlight">EmotionDetect</span> -</span>
+    						<br/>
+    						<span class="line2">&emsp;определение эмоций онлайн.</span>
+						</div>    				
+    				</div>
+    				<div class="item-right">
+    					<img src="../static/images/monitor.svg" class="item-right-image">
+    				</div>
+    			</div>
+    			<div class="carousel-item item-2">
+    				<div class="item-left">
+    					<div class="item-text">
+    						<span class="line1">Написано на</span>
+    						<br/>
+    						<span class="line2">&emsp;<span class="highlight">эффективных</span> алгоритмах.</span>
+    					</div>
+    				</div>
+    				<div class="item-right">
+    					<img src="../static/images/newspaper.svg" class="item-right-image">
+    				</div>
+    			</div>
+    			<div class="carousel-item item-3">
+    				<div class="item-left">
+    					<div class="item-text" style="margin-left: 10%; !important;">
+    						<span class="line1">Работает с</span>
+    						<br/>
+    						<span class="line2">&emsp;точностью <span class="highlight">97%!</span></span>
+    					</div>
+    				</div>
+    				<div class="item-right">
+    					<img src="../static/images/happy.svg" class="item-right-image">
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<section class="section-form">
+    		<div class="form-left card">
+    			<div class="form-text-container textgroup">
+    				<textarea id="form-text" class="form-text textinput" placeholder="Текст для анализа"></textarea>
+    				<label for="form-text" class="textlabel">Текст для анализа</label>
+    			</div>
+    			<div class="form-button-container">
+    				<a class="form-button ripple" onclick="javascript:sendForm();">Отправить</a>
+    			</div>
+    		</div>
+    		<div class="form-right card">
+    			<center id="result-container">
+    				<img id="result-image">
+    				<span id="result-text"></span>
+    			</center>
+    		</div>
+    	</section>
+    	<section class="section-aboutUs" id="anchor-aboutUs">
+    		<div class="aboutUs-container">
+    			<div class="aboutUs-grid">
+    				<div class="aboutUs-element">
+    					<div class="aboutUs-image">
+    						<img class="aboutUs-image" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Vladimir_Putin_%282017-07-08%29.jpg">
+    					</div>
+    					<div class="aboutUs-overlay">
+    						<div class="aboutUs-space"></div>
+    						<div class="aboutUs-info">
+    							<center class="aboutUs-vertical">
+    								<b>Владимир Путин</b>
+    								<br/>
+    								<br/>
+    								Молодец: политик, лидер и борец!
+    							</center>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="aboutUs-element aboutUs-putin">
+    					<img class="aboutUs-image" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Vladimir_Putin_%282017-07-08%29.jpg">
+    					<div class="aboutUs-overlay">
+    						<div class="aboutUs-space"></div>
+    						<div class="aboutUs-info">
+    							<center class="aboutUs-vertical">
+    								<b>Владимир Путин</b>
+    								<br/>
+    								<br/>
+    								Молодец: политик, лидер и борец!
+    							</center>
+    						</div>
+    					</div>
+    				</div><div class="aboutUs-element aboutUs-putin">
+    					<img class="aboutUs-image" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Vladimir_Putin_%282017-07-08%29.jpg">
+    					<div class="aboutUs-overlay">
+    						<div class="aboutUs-space"></div>
+    						<div class="aboutUs-info">
+    							<center class="aboutUs-vertical">
+    								<b>Владимир Путин</b>
+    								<br/>
+    								<br/>
+    								Молодец: политик, лидер и борец!
+    							</center>
+    						</div>
+    					</div>
+    				</div><div class="aboutUs-element aboutUs-putin">
+    					<img class="aboutUs-image" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Vladimir_Putin_%282017-07-08%29.jpg">
+    					<div class="aboutUs-overlay">
+    						<div class="aboutUs-space"></div>
+    						<div class="aboutUs-info">
+    							<center class="aboutUs-vertical">
+    								<b>Владимир Путин</b>
+    								<br/>
+    								<br/>
+    								Молодец: политик, лидер и борец!
+    							</center>
+    						</div>
+    					</div>
+    				</div><div class="aboutUs-element aboutUs-putin">
+    					<img class="aboutUs-image" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Vladimir_Putin_%282017-07-08%29.jpg">
+    					<div class="aboutUs-overlay">
+    						<div class="aboutUs-space"></div>
+    						<div class="aboutUs-info">
+    							<center class="aboutUs-vertical">
+    								<b>Владимир Путин</b>
+    								<br/>
+    								<br/>
+    								Молодец: политик, лидер и борец!
+    							</center>
+    						</div>
+    					</div>
+    				</div><div class="aboutUs-element aboutUs-putin">
+    					<img class="aboutUs-image" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Vladimir_Putin_%282017-07-08%29.jpg">
+    					<div class="aboutUs-overlay">
+    						<div class="aboutUs-space"></div>
+    						<div class="aboutUs-info">
+    							<center class="aboutUs-vertical">
+    								<b>Владимир Путин</b>
+    								<br/>
+    								<br/>
+    								Молодец: политик, лидер и борец!
+    							</center>
+    						</div>
+    					</div>
+    				</div><div class="aboutUs-element aboutUs-putin">
+    					<img class="aboutUs-image" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Vladimir_Putin_%282017-07-08%29.jpg">
+    					<div class="aboutUs-overlay">
+    						<div class="aboutUs-space"></div>
+    						<div class="aboutUs-info">
+    							<center class="aboutUs-vertical">
+    								<b>Владимир Путин</b>
+    								<br/>
+    								<br/>
+    								Молодец: политик, лидер и борец!
+    							</center>
+    						</div>
+    					</div>
+    				</div><div class="aboutUs-element aboutUs-putin">
+    					<img class="aboutUs-image" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Vladimir_Putin_%282017-07-08%29.jpg">
+    					<div class="aboutUs-overlay">
+    						<div class="aboutUs-space"></div>
+    						<div class="aboutUs-info">
+    							<center class="aboutUs-vertical">
+    								<b>Владимир Путин</b>
+    								<br/>
+    								<br/>
+    								Молодец: политик, лидер и борец!
+    							</center>
+    						</div>
+    					</div>
+    				</div><div class="aboutUs-element aboutUs-putin">
+    					<img class="aboutUs-image" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Vladimir_Putin_%282017-07-08%29.jpg">
+    					<div class="aboutUs-overlay">
+    						<div class="aboutUs-space"></div>
+    						<div class="aboutUs-info">
+    							<center class="aboutUs-vertical">
+    								<b>Владимир Путин</b>
+    								<br/>
+    								<br/>
+    								Молодец: политик, лидер и борец!
+    							</center>
+    						</div>
+    					</div>
+    				</div><div class="aboutUs-element aboutUs-putin">
+    					<img class="aboutUs-image" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Vladimir_Putin_%282017-07-08%29.jpg">
+    					<div class="aboutUs-overlay">
+    						<div class="aboutUs-space"></div>
+    						<div class="aboutUs-info">
+    							<center class="aboutUs-vertical">
+    								<b>Владимир Путин</b>
+    								<br/>
+    								<br/>
+    								Молодец: политик, лидер и борец!
+    							</center>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<footer>
+    		<nav class="nav">
+    			<div class="nav-left">
+    				<span class="nav-title">EmotionDetect</span>
+    			</div>
+    			<div class="nav-right">
+    				<ul class="nav-menu">
+    					<li onclick="javascript:scrollToAnchor('anchor-main')">Главная</li>
+    					<li onclick="javascript:scrollToAnchor('anchor-aboutUs')">О нас</li>
+    				</ul>
+    			</div>
+    		</nav>
+    	</footer>
+        <!---The end of HTML-->
+        <!--Start of JS-->
+        <!--jQuery-->
+        <script src="../static/js/jQuery/jquery-3.4.1.min.js"></script>
+        <!--Slick-->
+        <script src="../static/js/slick/slick.min.js"></script>
+        <script src="../static/js/main/logic.js"></script>
+    </body>
+</html>
