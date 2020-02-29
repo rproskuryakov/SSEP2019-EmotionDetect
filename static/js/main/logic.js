@@ -3,7 +3,7 @@ const config = {
 	imageError: 'static/images/error.svg',
 	imagePositive: 'static/images/positive.svg',
 	imageNegative: 'static/images/negative.svg',
-	apiAddress: 'http://127.0.0.1:6379/prediction',
+	apiAddress: 'https://emotion-detect-2019.herokuapp.com/prediction',
 	apiParam: 'api parammmmmmmmmmm'
 }
 const elem = {
